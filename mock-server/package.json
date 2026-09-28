@@ -1,0 +1,13 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "API REST simulada",
+  "private": true,
+  "scripts": {
+    "start": "json-server --watch ../mock-data/bd.json --port 3000",
+    "dev": "json-server --watch ../mock-data/bd.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}
