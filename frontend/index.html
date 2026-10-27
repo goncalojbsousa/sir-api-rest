@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Management</h1>
+
+<!-- Students list -->
+<section>
+  <header>
+    <h2>Students</h2>
+    <button class="primary" id="btn-new-student">+ New</button>
+  </header>
+  <table>
+    <thead>
+      <tr><th>First name</th><th>Last name</th><th>Course</th><th>Year</th><th>Actions</th></tr>
+    </thead>
+    <tbody id="student-list"></tbody>
+  </table>
+</section>
+
+<!-- Courses list -->
+<section>
+  <header>
+    <h2>Courses</h2>
+    <button class="primary" id="btn-new-course">+ New</button>
+  </header>
+  <table>
+    <thead>
+      <tr><th>Course name</th><th>Actions</th></tr>
+    </thead>
+    <tbody id="course-list"></tbody>
+  </table>
+</section>
+
+<!-- Student modal (add / edit) -->
+<dialog id="modal-student">
+  <form id="form-student">
+    <h2></h2>
+    <label>First name
+      <input type="text" name="nome" required>
+    </label>
+    <label>Last name
+      <input type="text" name="apelido" required>
+    </label>
+    <label>Course
+      <select name="idCurso" id="course-select" required></select>
+    </label>
+    <label>Year
+      <input type="number" name="anoCurricular" min="1" max="5" required>
+    </label>
+    <footer>
+      <button type="button" data-close>Cancel</button>
+      <button type="submit" class="primary">Save</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- Course modal (add / edit) -->
+<dialog id="modal-course">
+  <form id="form-course">
+    <h2></h2>
+    <label>Course name
+      <input type="text" name="nomeDoCurso" required>
+    </label>
+    <footer>
+      <button type="button" data-close>Cancel</button>
+      <button type="submit" class="primary">Save</button>
+    </footer>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>

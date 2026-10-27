@@ -1,0 +1,134 @@
+:root {
+  --bg: #f5f6fa;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #4f46e5;
+  --danger: #dc2626;
+  --radius: 12px;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 { text-align: center; }
+h2 { margin: 0; font-size: 1.1rem; }
+
+/* Sections */
+section {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+section header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Base buttons & inputs */
+button, input, select {
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+button:hover { background: #f3f4f6; }
+
+button.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+button.primary:hover { background: #4338ca; }
+
+button.danger { color: var(--danger); }
+button.danger:hover { background: #fef2f2; }
+
+/* Table buttons */
+td button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  margin-right: 0.3rem;
+}
+
+/* Table */
+table { width: 100%; border-collapse: collapse; }
+
+th, td {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: #fafafa; }
+
+/* Form fields */
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+input, select {
+  padding: 0.5rem 0.75rem;
+  color: var(--text);
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Modal */
+dialog {
+  border: none;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  width: min(400px, 90vw);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  animation: pop 0.15s ease;
+}
+
+dialog::backdrop {
+  background: rgba(17, 24, 39, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+dialog form { display: flex; flex-direction: column; gap: 1rem; }
+
+dialog footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.96); }
+}
