@@ -4,8 +4,8 @@
   "description": "API REST simulada",
   "private": true,
   "scripts": {
-    "start": "json-server --watch ../mock-data/bd.json --port 3000",
-    "dev": "json-server --watch ../mock-data/bd.json --port 3000"
+    "start": "json-server --watch ../mock-data/bd.json --port 3000 --static ../frontend",
+    "dev": "json-server --watch ../mock-data/bd.json --port 3000 --static ../frontend"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.15"

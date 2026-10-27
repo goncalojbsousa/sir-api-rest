@@ -1,16 +1,69 @@
 {
   "cursos": [
-    { "id": "1", "nomeDoCurso": "Engenharia Informática" },
-    { "id": "2", "nomeDoCurso": "Tecnologias e Sistemas de Informação para a Web" },
-    { "id": "3", "nomeDoCurso": "Engenharia Eletrotécnica" },
-    { "id": "4", "nomeDoCurso": "Gestão" }
+    {
+      "id": "1",
+      "nomeDoCurso": "Engenharia Informática"
+    },
+    {
+      "id": "2",
+      "nomeDoCurso": "Tecnologias e Sistemas de Informação para a Web"
+    },
+    {
+      "id": "3",
+      "nomeDoCurso": "Engenharia Eletrotécnica"
+    },
+    {
+      "id": "4",
+      "nomeDoCurso": "Gestão"
+    },
+    {
+      "nomeDoCurso": "Curso teste",
+      "id": "IdfySIuV3b4"
+    }
   ],
   "alunos": [
-    { "id": "1", "nome": "Ana", "apelido": "Silva", "idCurso": "1", "anoCurricular": 1 },
-    { "id": "2", "nome": "Bruno", "apelido": "Costa", "idCurso": "1", "anoCurricular": 2 },
-    { "id": "3", "nome": "Carla", "apelido": "Ferreira", "idCurso": "2", "anoCurricular": 3 },
-    { "id": "4", "nome": "Diogo", "apelido": "Pereira", "idCurso": "2", "anoCurricular": 1 },
-    { "id": "5", "nome": "Eva", "apelido": "Martins", "idCurso": "3", "anoCurricular": 2 },
-    { "id": "6", "nome": "Filipe", "apelido": "Rodrigues", "idCurso": "4", "anoCurricular": 3 }
-  ]
+    {
+      "id": "1",
+      "nome": "Ana",
+      "apelido": "Silva",
+      "idCurso": "1",
+      "anoCurricular": 1
+    },
+    {
+      "id": "2",
+      "nome": "Bruno",
+      "apelido": "Costa",
+      "idCurso": "1",
+      "anoCurricular": 2
+    },
+    {
+      "id": "3",
+      "nome": "Carla",
+      "apelido": "Ferreira",
+      "idCurso": "2",
+      "anoCurricular": 3
+    },
+    {
+      "id": "4",
+      "nome": "Diogo",
+      "apelido": "Pereira",
+      "idCurso": "2",
+      "anoCurricular": 1
+    },
+    {
+      "id": "5",
+      "nome": "Eva",
+      "apelido": "Martins",
+      "idCurso": "3",
+      "anoCurricular": 2
+    },
+    {
+      "id": "6",
+      "nome": "Filipe",
+      "apelido": "Rodrigues",
+      "idCurso": "4",
+      "anoCurricular": 3
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
